@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>Музыкальные проекты без бэкэнда</h1>
+
+            <h3>Дешево, сердито и эффективно</h3>
+
+            <p>
+                <small>Сева Родионов / <a href="//github.com/jabher">github.com/jabher</a></small>
+            </p>
+            <p>
+                <small><a href="http://publicradio.io">publicradio.io</a></small>
+            </p>
+        </section>
+
+        <section data-background="pet-project.gif">
+            <h2 style="display: inline-block;color: white;background: rgba(0,0,0,.5);">Node.js reactions</h2>
+
+            <div></div>
+            <h4 style="
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    line-height: 1.5;
+    color: white;
+    background: rgba(0,0,0,.5);">Sitting through <br/>a conference talk <br/>about a developer’s pet project</h4>
+        </section>
+
+        <!-- Example of nested vertical slides -->
+        <section>
+            <section>
+                <h2>Музыкальные проекты</h2>
+            </section>
+            <section data-background="gta-radio.jpg">
+                <h2 style="
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    line-height: 1.5;
+    color: white;
+    background: rgba(0,0,0,.5);">GTA V radio</h2>
+            </section>
+            <section data-background="plugin-player.jpeg">
+                <h2>Chrome-плагин</h2>
+            </section>
+            <section data-background="public-radio.png" data-background-repeat="no-repeat"
+                     data-background-size="contain">
+                <h2 style="
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    line-height: 1.5;
+    color: white;
+    background: rgba(0,0,0,.5);">Public Radio</h2>
+
+                <div></div>
+                <h4 style="
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    line-height: 1.5;
+    color: white;
+    background: rgba(0,0,0,.5);"><a href="http://publicradio.io">publicradio.io</a></h4>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+                <h2>Кому хорошо?</h2>
+            </section>
+            <section>
+                <h2>Диджитал-агентствам</h2>
+                <ul>
+                    <li class="fragment">"настоящий" проект, не несущий рисков</li>
+                    <li class="fragment">быстро и круто</li>
+                    <li class="fragment">всегда есть идеи - концепт, дизайн, технологии</li>
+                    <li class="fragment">делают имя</li>
+                    <li class="fragment">приводят клиентов</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Разработчикам</h2>
+                <ul>
+                    <li class="fragment"><i>Я не знаю, на чем попробовать react с redux, postCSS, clojureScript и
+                        service workers</i></li>
+                    <li class="fragment"><i>Руки чешутся сделать что-то крутое, но не знаю что</i></li>
+                    <li class="fragment"><i>Хочу сделать "настоящий" проект, который действительно раскрутится, но он
+                        такой большой, я не справлюсь</i></li>
+                    <li class="fragment"><i>Мне нужен бэкэнд</i></li>
+                </ul>
+                <h2 class="fragment" style="transform: rotate(90deg);">:-(</h2>
+            </section>
+        </section>
+        <section>
+            <h2>Выбирать музыку за пользователя - это тренд</h2>
+            <ul>
+                <li>Pandora</li>
+                <li>Spotify</li>
+                <li>Яндекс.музыка</li>
+                <li>Google Play музыка с автоматическими подборками</li>
+                <li class="fragment"><s>pocket.dj</s> <i>(не надо, не ходите туда)</i></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Плюсы отсутствия бэкэнда?</h2>
+            <ul>
+                <li class="fragment">Быстрая "единая" разработка без синхронизации содержимого</li>
+                <li class="fragment">Не нужно поддерживать работоспособность, масштабировать, следить: сделал и забыл
+                </li>
+                <li class="fragment">Есть челлендж</li>
+                <li class="fragment">Очень часто можно просто обойтись без него</li>
+            </ul>
+        </section>
+        <section>
+            <section>
+                <h2>А где данные?</h2>
+            </section>
+            <section data-background="bucket-cats.jpg">
+                <h2 style="
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    line-height: 1.5;
+    color: white;
+    background: rgba(0,0,0,.5);">Во внешних API!</h2>
+            </section>
+            <section data-background="thousands-of-them.jpeg">
+                <h2 style="
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    line-height: 1.5;
+    color: white;
+    background: rgba(0,0,0,.5);">В куче внешних API!</h2>
+            </section>
+        </section>
+        <section>
+            <h2>Источники контента</h2>
+            <ul>
+                <li class="fragment">VK</li>
+                <li class="fragment">YouTube</li>
+                <li class="fragment">SoundCloud</li>
+                <li class="fragment">8Tracks</li>
+                <li class="fragment">7digital, Deezer, Feed.fm, Mixcloud</li>
+                <li class="fragment">Free Music Archive, Freesound, Jamendo</li>
+                <li class="fragment">Rdio, Soptify, Microsoft Groove</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Данные о музыке</h2>
+            <ul>
+                <li class="fragment">MusicBrainz</li>
+                <li class="fragment">Last.fm</li>
+                <li class="fragment">Free.db</li>
+                <li class="fragment">Discogs</li>
+                <li class="fragment">Gracenote</li>
+                <li class="fragment">Тексты песен: ChartLyrics, LyricFind, MusixMatch</li>
+                <li class="fragment">События в городе: Bandsintown</li>
+                <li class="fragment">продажа билетов, например songkick, ponominalu. Нужен прокси :(</li>
+                <li class="fragment">Продажи музыки: iTunes, Amazon, Microsoft Groove, 7Digital</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Рекомендации</h2>
+            <ul>
+                <li class="fragment">Last.fm</li>
+                <li class="fragment">Stereomood</li>
+                <li class="fragment">Echo Nest</li>
+                <li class="fragment">Или можно просто проявить фантазию</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Что же с этим делать?</h2>
+            <ul>
+                <li class="fragment">Еще одна Pandora</li>
+                <li class="fragment">Еще один MTV</li>
+                <li class="fragment">Интеграция с сайтом аккордов для гитары, текстов песен и всего остального</li>
+                <li class="fragment">Плеер своей мечты</li>
+            </ul>
+        </section>
+        <section data-background="spotify-web.gif">
+            <h2 style="
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    line-height: 1.5;
+    color: white;
+    background: rgba(0,0,0,.5);">require('spotify-web')</h2>
+        </section>
+        <section>
+            <h1>THE END</h1>
+
+            <p>
+                <small>Сева Родионов / <a href="//github.com/jabher">github.com/jabher</a></small>
+            </p>
+            <p><small><a href="http://vk.com/vsevolod.rodionov">http://vk.com/vsevolod.rodionov</a></small></p>
+            <p><small><a href="http://publicradio.io">publicradio.io</a></small></p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {src: 'lib/js/classList.js', condition: function () { return !document.body.classList; }},
+            {
+                src: 'plugin/markdown/marked.js',
+                condition: function () { return !!document.querySelector('[data-markdown]'); }
+            },
+            {
+                src: 'plugin/markdown/markdown.js',
+                condition: function () { return !!document.querySelector('[data-markdown]'); }
+            },
+            {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                condition: function () { return !!document.querySelector('pre code'); },
+                callback: function () { hljs.initHighlightingOnLoad(); }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
